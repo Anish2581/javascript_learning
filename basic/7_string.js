@@ -48,3 +48,28 @@ console.log("Abhishek".substring(-2))//when we pass negative argument then it wi
 //substr(start, length)
 console.log("anishgupta".substr(5,6))//gupta //(start,length)
 
+//replace(old, new),replaceAll()
+console.log("hello world".replace("world","javascript"))//hello javascript
+console.log("anish Gupta".replace("anish","Akash"))//Akash Gupta 
+
+console.log("aa bb cc aa".replace("aa","ee"))//ee bb cc aa  ; change only fristone
+console.log("aa bb cc aa".replaceAll("aa","ee"))//ee bb cc ee  ; change all similar string
+
+//.split()
+
+let a="Anish,Akash,Aryan,Harsh"
+let b=a.split(",")//[ 'Anish', 'Akash', 'Aryan', 'Harsh' ]
+console.log(b)//convert string -> array depend on argrment passed
+
+//charAt()->pass any  index of string and this method will show character present at that index
+
+console.log("Ajay".charAt("3"))//char->y
+
+//charCodeAt() & fromCharCode
+
+console.log("abc".charCodeAt(0))//97   //here we pass index of an specific character and 
+// char->ascii value                     this method will show ascii value of that character
+
+
+
+console.log(String.fromCharCode(65))//A //ascii->character
