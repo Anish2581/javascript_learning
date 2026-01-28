@@ -25,7 +25,7 @@ console.log(e)//undefined
 //symbol
 const id=Symbol('123')
 const aid=Symbol('123')
-console.log(id==aid)
+console.log(id==aid)//false
 console.log(id ,aid)
 
 //bigInt
