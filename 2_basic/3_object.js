@@ -21,7 +21,9 @@ const myobj={
 // // console.log(myobj."full name")//error:- Unexpected string
 // console.log(myobj["full name"])// Anish Gupta
 
-// // console.log(myobj.sym)//69            //this will happen wan we take "sym" not "[sym]"
+console.log(myobj.sym)//undefined           //this will happen wan we take "sym" not "[sym]"
+console.log(myobj[sym])//69
+console.log(myobj.lname)//when we try to print value of element of object which is not present it print "undefined"
 // // console.log(typeof myobj.sym)//string //
 // //but we have to do symbol in object
 

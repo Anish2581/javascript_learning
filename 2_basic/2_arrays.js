@@ -36,8 +36,10 @@ marvel_heros.push(dc_heros)
  console.log(Array.isArray(["Anish"]))//varify wether is array or not//true //if isArray("Anish")->false
  console.log(Array.from("Anish"))//convert any data into array
 
-//  let score1=100 
-//  let score2=200 
-//  let score3=300 
+ let score1=100 
+ let score2=200 
+ let score3=300 
 
-//  console.log(Array.of(score1,score2,score3))//Returns a new array from a set of elements.
+ console.log(Array.of(score1,score2,score3))//Returns a new array from a set of elements.
+
+ console.log(score1)

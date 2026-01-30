@@ -29,8 +29,8 @@ console.log(instaUser.hasOwnProperty("islogg"))//false
 //     }
 // }
 // console.log(tinder.username)
-// console.log(tinder.username.fullname?.firstname)//"?" operator use when we are not sure it is present or not 
-
+// console.log(tinder.username.fullname?.firstname)//"?" operator use when we are not sure it is present or not "to prevent runtime error" if fullname is not present "it return undefined
+//" if we do not add ? (optional chaining operator) and fullname is not present it thow error to prevent this error we use ? operator
 const target={1:"a",2:"b"}
 const obj2={3:"c",4:"d"}
 //**there are three ways to merge object**
