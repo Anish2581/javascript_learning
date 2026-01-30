@@ -1,0 +1,2 @@
+val=null??undefined??{}??[]
+console.log(val)
