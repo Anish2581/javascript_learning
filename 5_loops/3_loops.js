@@ -43,8 +43,8 @@ const books = [
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
   ];
 
-//   let userBooks = books.filter( (bk) => bk.genre === 'History')//it will return whole bk if it is true 
-//   console.log(userBooks)
+  // let userBooks = books.filter( (bk) => bk.genre === 'History')//it will return whole bk if it is true 
+  // console.log(userBooks)
   //output:-[//
 //{
 //    title: 'Book Three',

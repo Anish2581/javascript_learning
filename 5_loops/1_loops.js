@@ -16,7 +16,7 @@ map.set("IN","india")
 map.set("USA","United State of America")
 map.set("FR","French")
 map.set("IN","Indonesia")//map is mutable we can change value example this 
-
+// console.log(typeof map)//object
 // console.log(map)
 ////Map(3) {
 //  'IN' => 'india',
@@ -47,7 +47,7 @@ map.set("IN","Indonesia")//map is mutable we can change value example this
 //     name:"Anish",
 //     "full name":"Anish Gupta",
 //     age:18,
-//     // [sym]:"69",
+//    // [sym]:"69",
 //     location:"bandra",
 //     email:"asd@gmail.com",
 //     lastlogged:["saturday","sunday"],
