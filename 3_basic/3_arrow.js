@@ -37,11 +37,11 @@ console.log(this)//{}
 // }
 // chai()
 
-// // 1.explesite return:-
-// // // const add=(num1,num2) => {
-// //     return num1+num2
-// // }
-// // console.log(add(5,10))//15  //in this we connot excess it before initialization
+// 1.explesite return:-
+// const add=(num1,num2) => {
+//     return num1+num2
+// }
+// console.log(add(5,10))//15  //in this we connot excess it before initialization
 
 // //2.implesite return:-
 // // const add = (num1,num2) =>  num1+num2
