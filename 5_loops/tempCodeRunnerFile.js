@@ -1,16 +1,6 @@
-const books = [
-    { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
-    { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
-    { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
-    { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
-    { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
-    { title: 'Book Six', genre: 'Fiction', publish: 2003, edition: 2010 },
-    { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
-    { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
-    { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
-  ];
-
-  let userBooks = books.filter( (bk) =>{ if(bk.genre === 'History'){
-  return bk
-  }})//it will return whole bk if it is true 
-  console.log(userBooks)
+let newarr=[2,3,4,5,6,7,8,9,10]
+const newnum=newarr
+            .map((num) => num*10)//the result of frist map is passed to second chained map mean the output of frist map is "[20, 30, 40,  50, 60, 70, 80, 90, 100] "
+            .map( (num) => num+1)//and this "passed to second map method" and "the output of second chain map is passed to third filter method"
+            .filter( (num) => num>=50 )// output of second map:-[21, 31, 41,  51, 61, 71, 81, 91, 101]
+ console.log(newnum)//[51, 61, 71, 81, 91, 101]

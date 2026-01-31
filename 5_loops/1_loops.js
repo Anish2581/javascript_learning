@@ -40,7 +40,7 @@ map.set("IN","Indonesia")//map is mutable we can change value example this
 // my["rollno"]=162
 // console.log(my)
 // for (const [k,j] of my) {
-//     console.log(`${i}->${j}`)
+//     console.log(`${k}->${j}`)
 // }//error:-"object is not iterable"
 
 // const myobj={
