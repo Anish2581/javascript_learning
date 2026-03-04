@@ -46,7 +46,7 @@ console.log("Abhishek".substring(-2))//when we pass negative argument then it wi
 
 
 //substr(start, length)
-console.log("anishgupta".substr(5,6))//gupta //(start,length)
+console.log("anishgupta".substr(5,8))//gupta //(start,length)//when we provide length grater than remaining it will print till last character of that string
 
 //replace(old, new),replaceAll()
 console.log("hello world".replace("world","javascript"))//hello javascript

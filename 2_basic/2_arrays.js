@@ -33,7 +33,7 @@ marvel_heros.push(dc_heros)
 // store=newarr3.flat(Infinity)//layer of flat =2
 //  console.log(store)
 
- console.log(Array.isArray(["Anish"]))//varify wether is array or not//true //if isArray("Anish")->false
+ console.log(Array.isArray(["Anish"]))//varify whether is array or not//true //if isArray("Anish")->false
  console.log(Array.from("Anish"))//convert any data into array
 
  let score1=100 

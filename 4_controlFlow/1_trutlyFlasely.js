@@ -1,6 +1,6 @@
-//1.let username="anish@gmail.com"  //
-// 2.let username=""
-// //3.let username=[]
+// let username="anish@gmail.com"  //1
+// let username=""  // 2
+// let username=[]  //3
 // if (username){
 //     console.log("got an username")
 // }
@@ -22,7 +22,7 @@ let val=4??5//4
 val=null??10//10
 val=20??null??40//20
 val=null??undefined??30??20//30
-val=null??undefined??{}??[]
+val=null??undefined??{}??[]//{}
 console.log(val)
 
 

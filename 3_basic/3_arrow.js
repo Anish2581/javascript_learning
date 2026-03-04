@@ -13,22 +13,22 @@ user.username="Akash"
 user.welcomemessage()
 console.log(this)//{}
 
-// // function chai(){
-// //     user="na"
-// //     // console.log(this)//it is showing many bunch of line //this keyword is "object" which contain so many variables
-// //     console.log(this.user)//output:-undefined  //this keyword is only work in objects
-// // }
-// // chai()
+// function chai(){
+//     user="na"
+//     // console.log(this)//it is showing many bunch of line //this keyword is "object" which contain so many variables
+//     console.log(this.user)//output:-undefined  //this keyword is only work in objects
+// }
+// chai()
 
-// // let chai=function(){//it will show same output 
-// //         user="na"
-// //     // console.log(this)//it is showing many bunch of line //this keyword is "object" which contain so many variables
-// //     console.log(this.user)//output:-undefined  //this keyword is only work in objects
-// // }
-// // chai()
+// let chai=function(){//it will show same output 
+//         user="na"
+//     // console.log(this)//it is showing many bunch of line //this keyword is "object" which contain so many variables
+//     console.log(this.user)//output:-undefined  //this keyword is only work in objects
+// }
+// chai()
 
-// //++++++++++++++++++++++ Arrow function ++++++++++++++++++:-basic syntax "()  => {}""
-// // we will beclare arrow function in this format
+//++++++++++++++++++++++ Arrow function ++++++++++++++++++:-basic syntax "()  => {}""
+// we will beclare arrow function in this format
 
 // let chai= () => {//it will show same output 
 //         user="na"
@@ -43,10 +43,10 @@ console.log(this)//{}
 // }
 // console.log(add(5,10))//15  //in this we connot excess it before initialization
 
-// //2.implesite return:-
-// // const add = (num1,num2) =>  num1+num2
+//2.implesite return:-
+// const add = (num1,num2) =>  num1+num2
 // const add=(num1,num2) => (num1+num2)
-// console.log(add(50,20))//70
+console.log(add(50,20))//70
 
 // const returnObject=() => ({num1:500})
 // console.log(returnObject())//{ num1: 500 }

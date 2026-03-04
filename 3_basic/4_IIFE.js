@@ -29,3 +29,18 @@
     console.log(`DB Connected,${user}`)
 })("Anish");
 
+
+// FOR AVOID GLOBAL CONFLICT
+
+// (function () {
+//     var message = "Hello";
+//     console.log(message);
+// })();
+
+// console.log(message); // ❌ Error (not accessible)
+
+//RULE OF DECLARING VARIABLE IN JS
+
+//1.Must start with letter,_ (underscore)and $(doller sign) ex:-$="anish"
+//2.do not contain space
+//3.do not match reserved keyword like for,while and etc

@@ -4,7 +4,7 @@ function addTwoNumber(n1,n2){
 
 let result=addTwoNumber("r","t",null)//when we pass no argument it will return NaN and 
 // when we pass more than mentioned argument it will automatically take first mention value as a parameter
-console.log(result)
+console.log(result)//rt
 
 function loggedIn(username){
     if(!username){//undefined ->false
