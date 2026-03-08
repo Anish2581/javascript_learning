@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <script>
+        const div=document.createElement("div")
+        console.log(div);
+        div.className="Akhilesh";
+        div.setAttribute("name","age")
+        div.style.color="green"
+        div.style.padding="12px"
+        div.id=Math.round(Math.random()*10)
+        // div.innerHTML="Hey i am Akhilesh"//method one 
+        const addtext=document.createTextNode("anish")
+        div.appendChild(addtext)//but it will not reflect in web interface because it is not in document of browser to show this we have to append it on docment
+
+        document.body.appendChild(div)
+        
+    </script>
+</body>
+</html>
