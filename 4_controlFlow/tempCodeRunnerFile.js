@@ -1,2 +1,2 @@
-val=null??undefined??{}??[]
-console.log(val)
+let full-name="anidh";
+console.log(full-name)

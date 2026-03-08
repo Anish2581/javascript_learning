@@ -1,10 +1,1 @@
-const tinder={
-    email:"js@s.com",
-    username:{
-        firstname:"Anish",
-        lastname:"Gupta"
-        
-    }
-}
-console.log(tinder.username)
-console.log(tinder.username.fullname?.firstname)//"?" operator use when we ar
+ console.log(Array.from("Anish"))//convert any data into array
