@@ -5,7 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body style="background-color: #212121; color: #fff;">
+    <div class="week">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+        <div class="day">friday</div>
+    </div>
+    <script>
+        const parent=document.querySelector(".week")
+        // console.log(parent)
+        // console.log(parent.children)//HTMLCollection(5) [div.day, div.day, div.day, div.day, div.day]0: div.day1: div.day2: div.day3: div.day4: div.day length: 5[[Prototype]]: HTMLCollection
+        // console.log(parent.children[0].innerHTML)//MONDAY
+
+        //if we have to print all content of parent so we do this 
+        // for (let i=0;i<parent.children.length;i++){
+        //     console.log(parent.children[i].innerHTML)
+        // }//this loop will print all the content of children of parent
+        parent.children[0].style.color="red"
+        // console.log(parent.firstElementChild)//this will display first element of parent
+        // console.log(parent.lastElementChild)//and this shows last
+        const dayone=document.querySelector(".day")
+        // console.log(dayone);
+        // console.log(dayone.parentElement)
+        // console.log(dayone.nextElementSibling)
+        // console.log(dayone.previousElementSibling);//if previous element is not present then return null
+
+        console.log("NODES:",parent.childNodes);//NodeList(11) it will return not of length 11 because in backend it enter is also count in node in "text" format
+        
+    </script>
 </body>
 </html>
