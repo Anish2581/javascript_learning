@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121 ; color: #fff;">
+    <ul class="language">
+        <li>python</li>
+    </ul>
+    <script>
+        function addlanguage(language){//this function is not optimize because it include .innerHTML and this will traverse whole document object hence increase time complexity
+            const li=document.createElement("li")
+            li.innerHTML=`${language}`
+            // console.log(li);
+            document.querySelector(".language").appendChild(li)
+        }
+        addlanguage("cpp")
+        addlanguage("c")
+        addlanguage("java")
+
+        function addOptLanguage(lang){
+            const li=document.createElement("li")
+            // const addText=document.createTextNode(lang)
+            // li.appendChild(addText)
+            li.appendChild(document.createTextNode(lang))
+            document.querySelector(".language").appendChild(li)
+        }
+        addOptLanguage("javascript")
+
+        // edit
+        // method1
+        document.querySelector("li:nth-child(2)").innerHTML="html"
+
+        // method2
+        const secondLang=document.querySelector("li:first-child")
+        const newli = document.createElement('li')
+        newli.textContent = "Mojo"
+        secondLang.replaceWith(newli)
+
+        // method3
+        document.querySelector("li:last-child").outerHTML="<li>cpp</li>"
+
+        //remove
+        document.querySelector("li:last-child").remove()
+    </script>
+</body>
+</html>
