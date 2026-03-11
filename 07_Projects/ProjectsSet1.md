@@ -92,3 +92,12 @@ form.addEventListener("submit",(e)=>{
     
 })
 ```
+## project 3
+
+```javascript 
+const time = document.querySelector("#clock")
+
+setInterval(()=>{//seInterval take two argument in which frist is function that to be call and time interval mean in which interval of time the function run repetatively
+  time.innerHTML=new Date().toLocaleTimeString()
+},1000)
+```
