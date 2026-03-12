@@ -158,7 +158,7 @@ function checkGuess(guess){
 }
 
 function displayGuess(guess){
-  userInput.innerHTML=""
+  userInput.value=""
   guesses.innerHTML += `${guess},`
   remaining.innerHTML = `${11-count}`
 }
@@ -169,7 +169,7 @@ function displayMessage(messege){
 }
 
 function endGame(){
-  userInput.innerHTML=""
+  userInput.value=""
   userInput.setAttribute("disable","")
   player=false
   p.innerHTML=`<h2 id="newGame">Start a new game</h2>`
@@ -184,7 +184,9 @@ function newGame(){
     prevgussed=[]
     player=true
     count=1
+    remaining.innerHTML = `${11-count}`
     userInput.removeAttribute("disable")
+    userInput.value=""
     guesses.innerHTML= ""
     newg.removeChild(p)
     lowOrHi.innerHTML=""
