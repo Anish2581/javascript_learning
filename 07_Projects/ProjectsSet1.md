@@ -101,3 +101,93 @@ setInterval(()=>{//seInterval take two argument in which frist is function that 
   time.innerHTML=new Date().toLocaleTimeString()
 },1000)
 ```
+
+## project 4
+``` javascript
+let random=parseInt(Math.random()*100+1)
+
+const userInput=document.querySelector(".guessField")
+const submit=document.querySelector("#subt")
+const guesses=document.querySelector(".guesses")
+const remaining=document.querySelector(".lastResult")
+const lowOrHi=document.querySelector(".lowOrHi")
+const newg=document.querySelector(".resultParas")
+let prevgussed=[]
+
+const p =document.createElement("p")
+
+let count=1
+
+
+let player=true
+if(player){
+  submit.addEventListener("click",(e)=>{
+  e.preventDefault()
+  validateGuess(parseInt(userInput.value))
+})}
+
+function validateGuess(guess){
+  if(isNaN(guess)){
+   alert("please enter a valid number")
+  }else if (guess<0){
+    alert("Please enter a valid Number greater than One")
+  }else if (guess>100){
+    alert("please enter a valid number less than 100")
+  } else {
+    if(count === 11){
+    displayMessage(`Game Over . currect number is ${random}`)
+    endGame()
+  } else {
+    prevgussed.push(guess)
+    count++
+    displayGuess(guess)
+    checkGuess(guess)
+  }
+ }
+}
+
+function checkGuess(guess){
+  if(guess === random){
+    displayMessage('you won!')
+    endGame()
+  } else if(guess<random){
+    displayMessage(`Number is TOO low`)
+  } else{
+    displayMessage("Number is TOO high")
+  }
+}
+
+function displayGuess(guess){
+  userInput.innerHTML=""
+  guesses.innerHTML += `${guess},`
+  remaining.innerHTML = `${11-count}`
+}
+
+
+function displayMessage(messege){
+  lowOrHi.innerHTML=messege 
+}
+
+function endGame(){
+  userInput.innerHTML=""
+  userInput.setAttribute("disable","")
+  player=false
+  p.innerHTML=`<h2 id="newGame">Start a new game</h2>`
+  newg.append(p)
+  newGame()
+}
+
+function newGame(){
+  const newgame=document.querySelector("#newGame")
+  newgame.addEventListener("click",(e)=>{
+    random=parseInt(Math.random()*100+1)
+    prevgussed=[]
+    player=true
+    count=1
+    userInput.removeAttribute("disable")
+    guesses.innerHTML= ""
+    newg.removeChild(p)
+    lowOrHi.innerHTML=""
+  })
+}
+```
