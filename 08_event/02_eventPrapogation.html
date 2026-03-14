@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="grandparent">
+    <div id="parent">
+        <button id="child">Click Me</button>
+    </div>
+</div>
+<script>
+
+// what is event propogation?
+// event propogation is how event in dom travel when it is triggered
+// there are two type of event propogation 
+
+// 1.Bubble-up(Default)
+    // document.querySelector("#grandparent").addEventListener("click", () => {
+    //     console.log("Grandparent clicked")//by Default third argument is always flase mean bubble-up 
+    // },false)
+    // document.querySelector("#parent").addEventListener("click", () => {
+    //     console.log("Parent clicked")
+    // },false)
+    // document.querySelector("#child").addEventListener("click", () => {
+    //     console.log("Child clicked")
+    //     },false)
+        // **Output when button is clicked:**
+        // ```
+        // Child clicked
+        // Parent clicked
+        // Grandparent clicked
+
+
+// 2.Capturing (top → down)
+    // document.querySelector("#grandparent").addEventListener("click", () => {
+    // console.log("Grandparent clicked")
+    // }, true)   // ← true enables capturing
+
+    // document.querySelector("#parent").addEventListener("click", () => {
+    // console.log("Parent clicked")
+    // }, true)
+
+    // document.querySelector("#child").addEventListener("click", () => {
+    // console.log("Child clicked")
+    // }, true)
+// ```
+
+// **Output when button is clicked:**
+// ```
+// Grandparent clicked
+// Parent clicked
+// Child clicked
+
+// there is one method which can stop the event propogation called "stopPropagation()"
+    // document.querySelector("#parent").addEventListener("click",(e)=>{
+    //     console.log("parent clicked")
+    // })
+    // document.querySelector("#child").addEventListener("click",(e)=>{
+    //     e.stopPropagation()
+    //     console.log("child clicked")
+    })
+// ```
+// **Output:**
+// ```
+// Child clicked
+
+
+    document.querySelector("#parent").addEventListener("click",(e)=>{
+        console.log("parent clicked")
+        e.stopPropagation()
+    },true)
+    document.querySelector("#child").addEventListener("click",(e)=>{
+        console.log("child clicked")
+    },true)
+// ```
+// **Output:**
+// ```
+// parent clicked
+</script>
+</body>
+</html>
+

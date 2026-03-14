@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=l, initial-scale=1.0">
+    <title>Addition of two number</title>
+</head>
+<body>
+        <label for="a">Enter A</label><br>
+        <input type="number" name="a" id="a"><br>
+        <label for="b">Enter B</label><br>
+        <input type="number" name="b" id="b"><br><br>
+        <input type="submit" id="sub" value="calculate" onclick="add()">
+
+        <h2 id="result"></h2>
+    <script>
+        function add(){
+            const a=parseInt(document.querySelector("#a").value)
+            const b=parseInt(document.querySelector("#b").value)
+            document.getElementById("result").innerHTML=a+b
+        }
+    </script>
+</body>
+</html>

@@ -6,7 +6,7 @@
 
 # solutions
 ## project 1
-```javascript
+``` javascript
 const buttons = document.querySelectorAll(".button")
 
 buttons.forEach((button)=>{
